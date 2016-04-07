@@ -27,17 +27,26 @@ $('.tel').html(data);
 
 });*/
     
-$('.text').bind({'mouseenter' : function () {
-$(this).css('display', 'none');
+$('.block-tel').bind({'mouseover' : function () {
+$('.text').css('display', 'none');
 $('.knopka').css({'display':"block"});
 
 },
- 'mouseleave':function() { 
- $(this).css('display', 'block');    
+ 'mouseout':function() { 
+ $('.text').css('display', 'block');    
 $('.knopka').css({'display':"none"});
      
-} 
+}              
+                      
+                      
 });
+    
+$('.call').bind({'click':function(){
+$('.obratnsvyaz').css('display', 'block');    
+
+}    
+                });
+    
  
 };
 $(document).ready(main);

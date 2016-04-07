@@ -120,35 +120,76 @@ color:#ed1d38;
 font-size: 26px;
 
 }
+.middle .container {
 
 
+
+}
+.cont-cake{
+padding: 0px;
+ width:935px;
+
+}
+.cake {
+padding:0px;
+}
+
+
+.cake:nth-child(1) {
+padding-right: 31px;
+}
+.cake:nth-child(2) {
+padding: 0px 15px;
+}
+.cake:nth-child(3) {
+padding-left: 31px;
+}
 .content2 article {
-padding-top:40px; 
 
-padding:15px;
 margin:0 auto;
 text-align: center;
 }
 .blockimg {
-display: inline-block;
+
 height: 15px;
-    width:20px;
-    margin: -5px;
+  
 }
 .lefttop {
 height: 15px;
 background: url("../img/lefttop.png") left top no-repeat;
+    float: left;
+    width:20px;
 }
 .centertop {
-height: 15px;
-background: url("../img/centertop.png") repeat-x;
-    width: 80%;
+
+background: url("../img/centertop.png") center top repeat-x;
+  display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+  
+
+}
+.centerbottom {
+background: url("../img/centerbottom.png") center bottom repeat-x;
+  display: block; 
+ margin-left:20px;
+ margin-right:20px;
+
 }
 .righttop {
 height: 15px;
 background: url("../img/righttop.png") right top no-repeat;
+float: right;
+width:20px;
 }
+.left2{
+float:left;
+width:20px;
+background: url("../img/left2.png") repeat-y;
 
+   
+
+}
 .leftmenu {
 margin-top: 20px;
    
@@ -176,21 +217,82 @@ color: white;
 border-color: white;
 }
 .text {
-display: none;
+display: block;
 height: 100px;
 width: 200px;
 border: 2px solid white;
 }
-/**/ 
-.knopka {
-display: block;
 
+.knopka {
+display: none;
 background-color: bisque;
 text-align: center;
+ height: 100px;
+width: 200px; 
+padding-top: 20px;    
 }
 
 @font-face {
 
 font-family:"Lobster";
     src: url("Lobster14.otf");
+}
+
+.task {
+background: url("../img/lefttop.png") left top no-repeat,
+    url("../img/righttop.png") right top no-repeat,
+    url("../img/bottom-angle-left.png") left bottom no-repeat,
+ url("../img/bottom-angle-right.png") right bottom no-repeat;
+    
+    
+}
+
+.blockimg-mid {
+padding: 0px 10px;
+background: url("../img/left2.png") left top repeat-y,
+            url("../img/right2.png") right top repeat-y;
+background-color: #f6dbac;
+}
+
+.lenta {
+position:relative;
+left:-35px;
+    top:0px;
+    z-index: 1;
+   
+}
+
+.lenta-nadpis {
+ color: #f6dbac;
+position:absolute;
+z-index: 10;
+     top:20px;
+    left:20px;
+}
+.imagecake {
+position:absolute;
+z-index: 10;
+     top:-15px;
+    left:200px;
+}
+
+
+.call {
+border:2px solid grey;
+text-decoration: none;
+padding:10px 20px;
+    background-color: white;
+}
+
+.call:hover{
+
+text-decoration: none;
+}
+.obratnsvyaz {
+display:none;
+position: absolute;
+left:20px;
+top:-40px;
+background-color: #f6dbac;
+
 }
